@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 
-function Contact() {
+function FindTherapist() {
   return (
     <div>
       <NavBar/>
@@ -9,4 +9,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default FindTherapist
