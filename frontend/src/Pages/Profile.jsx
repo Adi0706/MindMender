@@ -32,6 +32,14 @@ function Profile({ therapists }) {
                 <h2 style={{textAlign:"center"}}>ABOUT ME </h2>
                 <p>{therapist.about}</p>
             </div>
+            <div className="aboutme" style={{width:"700px",height:"auto",marginTop:"20px",marginLeft:"400px",padding:"20px",boxShadow:"0px 0px 5px black"}}>
+                <h2 style={{textAlign:"center"}}>TRAINING QUALIFICATIONS AND CERTIFICATIONS </h2>
+                <p style={{textAlign:"center",padding:"5px"}}>{therapist.certification}</p>
+            </div>
+            <div className="aboutme" style={{width:"700px",height:"auto",marginTop:"20px",marginLeft:"400px",padding:"20px",boxShadow:"0px 0px 5px black"}}>
+                <h2 style={{textAlign:"center"}}>AREAS OF COUNCELLING I DEAL WITH :</h2>
+                <p style={{textAlign:"center",padding:"5px"}}>{therapist.subjects}</p>
+            </div>
             
         </>
     );
