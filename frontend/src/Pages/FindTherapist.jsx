@@ -301,9 +301,9 @@ function FindTherapist() {
               </CardContent>
               <CardActions>
 
-                <Button size="small" sx={{ fontWeight: "bolder" }}>
+                <Link to="/Contact"><Button size="small" sx={{ fontWeight: "bolder" }}>
                   {item.button1}
-                </Button>
+                </Button></Link>
                 
                 <Link to={`/profile/${item.id}`}>
                 <Button size="small" sx={{ fontWeight: "bolder" }}>

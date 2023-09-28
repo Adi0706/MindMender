@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import NavBar from '../Components/NavBar';
 import { Button } from '@mui/material';
+import {Link} from 'react-router-dom';
 
 function Profile({ therapists }) {
     const { id } = useParams();
@@ -22,9 +23,9 @@ function Profile({ therapists }) {
             <div className="profile-content">
                 <h2>{therapist.cardname}  ({therapist.category1} {therapist.category2})</h2>
                 <h3>MBACP. PG Dip.</h3>
-                <Button size="large" sx={{ fontWeight: "bolder" }}>
+               <Link to="/Contact"> <Button size="large" sx={{ fontWeight: "bolder" }}>
                   BOOK SESSION
-                </Button>
+                </Button> </Link>
                 <p>{therapist.phone}</p>
             </div>
             </section>
