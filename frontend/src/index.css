@@ -9,19 +9,38 @@ body{
   overflow-x: hidden;
 }
 .navbar{
-box-shadow: 0px 0px 10px black;
+
   
 }
-.navbar .nav-items{
+.navbar .nav-items {
   font-size: large;
   display: flex;
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  position: relative;
 }
 .item{
   font-weight: 1000;
   cursor: pointer;
+}
+.item:after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  transform-origin: bottom;
+
+}
+.item:hover::after{
+  width: 50%;
+  margin-left: 200px;
 }
 .navbar .nav-items a{
   list-style-type: none;
@@ -53,18 +72,8 @@ box-shadow: 0px 0px 10px black;
   font-weight: bolder;
   font-size: 50px;
   margin-left: 20px;
-  animation: fadeInText 1s ease-in-out forwards;
 }
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Optional: Add a slight upward movement */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 .dummy-div {
   width: 100vw;
   height: 150px;
@@ -142,19 +151,69 @@ box-shadow: 0px 0px 10px black;
 .contactimg{
   width: 762px;
   height: 707px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
-.aboutus{
+.aboutus {
   width: 100vw;
-  height: 500px;
-  border: solid;
-  border-color: black;
+  height: auto;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center the content horizontally */
   text-align: center;
   flex-direction: column;
+  background-image: url("../src/Media/background.png");
+  background-size: cover; /* Cover the entire element */
+  background-attachment: fixed; /* Fixed background position */
+  background-repeat: no-repeat; /* Do not repeat the background */
+}
+.aboutus h1{
+  padding: 20px;
+}
+.aboutus p{
+  text-align: center;
+  font-size: 100;
+  padding: 15px;
+  font-weight: bold;
+}
+.footer {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.aboutus h1{
+.support {
+  margin-right: 100px; /* Decreased margin from 300px to 100px */
+  margin-left: 100px; /* Decreased margin from 100px to 50px */
+  margin-top: 70px;
+  list-style-type: none;
   padding: 10px;
+}
+
+.footer h3 {
+  margin-top: 50px; /* Decreased margin from 50px to 20px */
+}
+
+.icons a {
+  color: black;
+  padding: 20px;
+}
+.support li{
+  padding: 5px;
+}
+.support a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer h3{
+  margin-top: 50px;
+}
+.icons a{
+  color: black;
+  padding: 20px;
+}
+.me-card{
+  text-align: center;
 }

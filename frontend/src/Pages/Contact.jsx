@@ -14,6 +14,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
+import Footer from '../Components/Footer';
 
 const defaultTheme = createTheme({
   palette: {
@@ -144,6 +145,7 @@ function Contact() {
           </ThemeProvider>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

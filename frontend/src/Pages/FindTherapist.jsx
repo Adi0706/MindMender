@@ -13,6 +13,7 @@ import Stack from "@mui/material/Stack";
 import gilly from "../Media/gillyrussel.png";
 import {Link} from 'react-router-dom';
 
+
 function FindTherapist() {
   const CardData = [
     {
@@ -174,6 +175,8 @@ function FindTherapist() {
   const resetFilter = () => {
     setCardData(originalCardData);
   };
+ 
+  
 
   return (
     <div>
@@ -315,6 +318,7 @@ function FindTherapist() {
           ))}
         </div>
       </section>
+      
     </div>
   );
 }
