@@ -24,23 +24,8 @@ body{
   font-weight: 1000;
   cursor: pointer;
 }
-.item:after{
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-  transform-origin: bottom;
-
-}
-.item:hover::after{
-  width: 50%;
-  margin-left: 200px;
+.item:hover{
+  text-shadow: 0px 0px 10px gray;
 }
 .navbar .nav-items a{
   list-style-type: none;

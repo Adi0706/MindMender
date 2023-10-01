@@ -59,7 +59,7 @@ function Contact() {
                 <Typography component="h1" variant="h5" sx={{ color: "black", fontSize: 24, marginBottom: 3 }}>
                   BOOK YOUR SESSION
                 </Typography>
-                <Box component="form" noValidate sx={{ mt: 3 }}>
+                <Box component="form" noValidate sx={{ mt: 3 }} action='https://formspree.io/f/maygloop' method='POST'>
                   <TextField
                     margin="normal"
                     required
@@ -108,9 +108,9 @@ function Contact() {
                       label="Type of Professional"
                       onChange={handleInput}
                     >
-                      <MenuItem value="Doctor">COUNCELLOR</MenuItem>
-                      <MenuItem value="Engineer">HYPNOTHERAPIST</MenuItem>
-                      <MenuItem value="Teacher">LIFE COACH</MenuItem>
+                      <MenuItem value="COUNCELLOR">COUNCELLOR</MenuItem>
+                      <MenuItem value="HYPNOTHERAPIST">HYPNOTHERAPIST</MenuItem>
+                      <MenuItem value="LIFE COACH">LIFE COACH</MenuItem>
                       
                     </Select>
                   </FormControl>
@@ -119,12 +119,12 @@ function Contact() {
                     <Select
                       id="sess_type"
                       name="sess_type"
-                      value={post.prof_type}
+                      value={post.sess_type}
                       label="Session Type"
                       onChange={handleInput}
                     >
-                      <MenuItem value="Doctor">ONLINE</MenuItem>
-                      <MenuItem value="Engineer">OFFLINE</MenuItem>
+                      <MenuItem value="ONLINE">ONLINE</MenuItem>
+                      <MenuItem value="OFFLINE">OFFLINE</MenuItem>
                       
                       
                     </Select>
